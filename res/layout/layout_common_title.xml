@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/common_title_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/common_title_relativeLayout"
+                    android:background="@drawable/bottom_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60px">
+        <TextView android:id="@+id/common_title_text"
+                                                 android:gravity="center"
+                                                 android:text="title"
+                                                 android:textSize="44px"
+                                                 android:textStyle="bold"
+                                                 android:textColor="@color/white"
+                                                 android:ellipsize="end"
+                                                 android:singleLine="true"
+                                                 android:maxLength="9"
+                                                 android:maxEms="9"
+                                                 android:layout_centerInParent="true"
+                                                 android:layout_width="wrap_content"
+                                                 android:layout_height="wrap_content"/>
+        <Button android:id="@+id/left_button"
+                                               android:background="@drawable/btn_back"
+                                               android:text="left"
+                                               android:textColor="@color/white"
+                                               android:textStyle="bold"
+                                               android:textSize="24px"
+                                               android:maxLines="1"
+                                               android:gravity="left|center_vertical"
+                                               android:paddingLeft="35px"
+                                               android:layout_centerVertical="true"
+                                               android:layout_alignParentLeft="true"
+                                               android:layout_marginLeft="17px"
+                                               android:layout_width="108px"
+                                               android:layout_height="78px"
+                                               android:visibility="gone"/>
+        <Button android:id="@+id/right_button"
+                                               android:visibility="gone"
+                                               android:text="right"
+                                               android:textColor="@color/white"
+                                               android:textStyle="bold"
+                                               android:textSize="24px"
+                                               android:gravity="center"
+                                               android:layout_centerVertical="true"
+                                               android:layout_alignParentRight="true"
+                                               android:layout_marginRight="23px"
+                                               android:layout_width="94px"
+                                               android:layout_height="58px"/>
+       
+    </RelativeLayout>
+    
+</RelativeLayout>

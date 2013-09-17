@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">笑傲江湖</string>
+ 	<string name="button_back">返回</string>
+    
+    
+	<string name="tab_text_joke">笑话</string>
+    <string name="tab_text_story">故事</string>
+    <string name="tab_text_say">爆笑</string>
+    <string name="tab_text_more">更多</string>
+    
+    <string name="list_menu_title">操作</string>
+    <string name="list_menu_share">分享</string>
+    
+    <string name="more_text_mine">我的家园</string>
+    <string name="more_text_third">第三方授权</string>
+    <string name="more_text_duzheli">读哲理</string>
+    <string name="more_text_share">推荐好友</string>
+    <string name="more_mine_title">city丽人馆</string>
+    
+    
+    <string name="tip_get_markerpoint">点击即可获取此点</string>
+	<string name="tip_get_fixed">确定</string>
+	<string name="tip_get_cancle">取消</string>
+	<string name="tip_get_title">提示</string>
+	<string name="tip_msg_neterror">网络不稳定</string>
+	<string name="tip_msg_servererror">服务器出现异常</string>
+	<string name="tip_msg_loginsucc">登录成功</string>
+	<string name="tip_msg_loginfail">登录失败</string>
+	
+
+	
+	 <string name="title_alert">提示信息</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+</resources>

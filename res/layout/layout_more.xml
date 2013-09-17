@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:background="#eee"
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:baiduadsdk="http://schemas.android.com/apk/res/com.joke">
+
+ <RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/layout01" 
+		android:layout_height="50dp"
+		android:background="@drawable/bottom_bar"
+		android:orientation="horizontal">
+	
+     <TextView 
+            android:id="@+id/home_resource"
+			android:text="@string/tab_text_more"
+			android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_centerHorizontal="true"
+		    android:textColor="@color/white"
+		    android:textSize="@dimen/title_size"
+		    android:textStyle="bold"
+		    android:gravity="center"/>
+		
+	
+	</RelativeLayout>
+    
+ 	<com.baidu.mobads.AdView android:id="@+id/adView"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		baiduadsdk:adSize="0"
+		baiduadsdk:adId = "debug_m0000001"/>
+	<!-- 注： baiduadsdk:adId可以指定为"",表示默认广告位-->
+ 
+ 	
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- *********************************************************************** -->
+ 		<RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/preference_first_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="share_mine"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/more_text_mine"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+		<ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_arrow" />
+            </RelativeLayout>
+            
+ 			 <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="share_oauth">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/more_text_third"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+					<ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_arrow" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="share_oauth"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/more_text_share"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+				<ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_arrow" />
+            </RelativeLayout>
+ 			  <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/preference_last_item"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="share_zheli">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/more_text_duzheli"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_arrow" />
+            </RelativeLayout>
+ 		</LinearLayout>
+    </ScrollView>
+</LinearLayout>

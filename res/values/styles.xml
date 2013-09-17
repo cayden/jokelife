@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="chat_text_name_style">  
+		<item name="android:textColor">#818181</item>   
+		<item name="android:textSize">15sp</item>      
+		<item name="android:gravity">center</item> 
+	</style>
+	
+   
+  
+	
+  <style name="FullHeightDialog"
+    parent="android:style/Theme.Dialog">
+    <item name="android:windowNoTitle">true</item>
+  </style>
+	
+ 
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="Activity_ListView_Specfication" parent="android:Widget.ListView.White">
+        <item name="android:background">#FFF</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">1px</item>   
+         <!-- @drawable/specfication_listview_style   -->
+        <item name="android:listSelector">#000000</item> 
+        <item name="android:fastScrollEnabled">true</item>   
+        
+    </style>
+    
+</resources>

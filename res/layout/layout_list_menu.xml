@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+         android:orientation="vertical" >
+      
+     <TextView 
+			android:text="@string/list_menu_title"
+			android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:textColor="@color/white"
+		    android:textSize="20sp"
+		    android:background="@color/black"
+		    android:layout_gravity="center"
+		    android:textStyle="bold"
+		    android:gravity="center|left"/>
+		
+	
+ 		<TableLayout
+ 		            
+                    android:id="@+id/MorePageTableLayout_Favorite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+            		
+ 		    		<TableRow
+                        android:id="@+id/share_tr"
+                        android:paddingBottom="16.0dip"
+                        android:paddingTop="16.0dip"
+                        android:background="@color/white"
+                       >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="10.0dip"
+                            android:text="@string/list_menu_share"
+                            android:textColor="#ff333333"
+                            android:textSize="18.0sp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20.0dip"
+                            android:src="@drawable/ic_arrow" />
+                    </TableRow>
+ 		    		
+ 		    		
+                      
+             </TableLayout>
+                    
+ 	</LinearLayout>
+        
+</FrameLayout>
